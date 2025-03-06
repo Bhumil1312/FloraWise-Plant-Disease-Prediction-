@@ -14,35 +14,35 @@ FloraWise is an AI-powered web application for plant recognition and disease det
 ## Repository Structure
 ```
 FloraWise-Plant-Disease-Prediction-/
-│── 📂 notebooks/               # Jupyter Notebooks for training & testing
-│   ├── train_model.ipynb        # Model training process
-│   ├── test_model.ipynb         # Model evaluation & testing
+│── 📂 Notebooks/                 # Jupyter Notebooks for training & testing
+│   ├── Train_plant_disease.ipynb  # Model training process
+│   ├── Test_plant_disease.ipynb   # Model evaluation & testing
 │
-│── 📂 model/                   # Saved deep learning model
-│   ├── flora_model.h5           # Trained model file
+│── 📂 Model/                   # Saved deep learning model
+│   ├── trained_model.h5         # Trained model file
 │
-│── 📂 app/                     # Deployment files for Streamlit app
+│── 📂 WebApp/                  # Deployment files for Streamlit app
 │   ├── app.py                   # Streamlit app main script
-│   ├── requirements.txt         # Dependencies for Streamlit
+│   ├── home_page.jpeg           # Dependencies for Streamlit
 │
-│── 📂 docs/                    # Project documentation
-│   ├── SDLC Documentation.pdf   # Software Development Life Cycle report
+│── 📂 Documentation/                      # Project documentation
+│   ├── SDLC Documentation(FloraWise).pdf   # Software Development Life Cycle report
 │
 │── README.md                    # Overview and setup instructions
 ```
 ## Installation & Setup:
 ### Clone the repository
 ```
-git clone https://github.com/yourusername/FloraWise-Plant-Disease-Prediction.git
+git clone https://github.com/yourusername/FloraWise-Plant-Disease-Prediction-.git
 cd FloraWise-Plant-Disease-Prediction-
 ```
 ### Create a virtual environment & install dependencies
 ```
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-pip install -r app/requirements.txt
+python -m venv FloraWise
+source FloraWise/bin/activate  # On Windows use `FloraWise\Scripts\activate`
+pip install -r WebApp/home_page.jpeg
 ```
 ### Run the Streamlit application
 ```
-streamlit run app/app.py
+streamlit run WebApp/app.py
 ```
